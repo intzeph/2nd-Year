@@ -1,0 +1,60 @@
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class L1 {
+    public static void main(String[] args) {
+        Scanner scan= new Scanner(System.in);
+        DecimalFormat df2= new DecimalFormat(".00");
+
+        double WconValue, HconValue, BMI;
+
+        System.out.print("Please enter your name: ");
+        String Name=scan.nextLine();
+        System.out.print("Please enter your age: ");
+        int age= scan.nextInt();
+        System.out.print("Please enter your weight in kg: ");
+        double weight=scan.nextDouble();
+        System.out.print("Please enter your height in m: ");
+        double height=scan.nextDouble();
+
+        WconValue= weight*2.2046;
+        HconValue= height*39.3701;
+
+        BMI=(weight/(height*height));
+
+        System.out.println("\n\nName: "+Name);
+        System.out.println("Age: "+age);
+        System.out.println("Weight(kg): "+weight);
+        System.out.println("Height(m): "+height);
+        System.out.println("\n\n");
+
+        if(BMI<= 18.4){
+            System.out.println("Hi "+Name+"."+" You are "+ age+ " years old weighing "+ df2.format(WconValue)+
+                    " pounds and with a height of "+df2.format(HconValue)+" inches. The result of your BMI based on the data you input is Underweight BMI. "+
+                    "This BMI is less than 18.4 and is  considered underweight for an adult at this height."
+            );
+        }
+        else if (BMI >=18.5 && BMI <=24.9 ){
+            System.out.println("Hi "+Name+"."+" You are "+ age+ " years old weighing "+ df2.format(WconValue)+
+                    " pounds and with a height of "+df2.format(HconValue)+" inches. The result of your BMI based on the data you input is Normal BMI. "+
+                    "This BMI is between 18.5 to 24.9 and is  considered normal for an adult at this height."
+            );
+        }
+        else if (BMI >=25.0 && BMI <=39.9){
+            System.out.println("Hi "+Name+"."+" You are "+ age+ " years old weighing "+ df2.format(WconValue)+
+                    " pounds and with a height of "+df2.format(HconValue)+" inches. The result of your BMI based on the data you input is Overweight BMI. "+
+                    "This BMI is between 25.0 to 39.9 and is  considered overweight for an adult at this height."
+            );
+        }
+        else if (BMI>= 40.0){
+            System.out.println("Hi "+Name+ "."+" You are "+ age+ " years old weighing "+ df2.format(WconValue)+
+                    " pounds and with a height of "+df2.format(HconValue)+" inches. The result of your BMI based on the data you input is Obese BMI. "+
+                    "This BMI is greater than 40.0 and is  considered obese for an adult at this height."
+            );
+        }
+        else{
+            System.out.println("Invalid Data");
+        }
+    }
+}
