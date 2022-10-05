@@ -18,7 +18,7 @@ public class L1 {
         System.out.print("Please enter your height in m: ");
         double height=scan.nextDouble();
 
-        WconValue= weight*2.2046;
+        WconValue= weight*2.20462;
         HconValue= height*39.3701;
 
         BMI=weight/(height*height);
