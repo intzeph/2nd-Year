@@ -21,7 +21,7 @@ public class L1 {
         WconValue= weight*2.2046;
         HconValue= height*39.3701;
 
-        BMI=(weight/(height*height));
+        BMI=weight/(height*height);
 
         System.out.println("\n\nName: "+Name);
         System.out.println("Age: "+age);
