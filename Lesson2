@@ -1,0 +1,84 @@
+
+public class L2 {
+    public static void main(String[] args) {
+
+        //Employee
+        Employee Emp1=new Employee();
+        Emp1.empName="Harry";
+        Emp1.empAge=35;
+        Emp1.empId="Emp-001";
+        Emp1.empDept="Finance";
+
+        Employee Emp2= new Employee();
+        Emp2.empName="William";
+        Emp2.empAge=38;
+        Emp2.empId="Emp-002";
+        Emp2.empDept="HR";
+
+        Employee Emp3= new Employee();
+        Emp3.empName="Cate";
+        Emp3.empAge=25;
+        Emp3.empId="Emp-003";
+        Emp3.empDept="IT";
+
+        //Customer
+        Customer Cus1=new Customer();
+        Cus1.cusName="Chaz";
+        Cus1.cusAge=25;
+        Cus1.cusGender="Female";
+        Cus1.cusId="Cus-005";
+
+        Customer Cus2= new Customer();
+        Cus2.cusName="Julie";
+        Cus2.cusAge=26;
+        Cus2.cusGender="Female";
+        Cus2.cusId="Cus-006";
+        
+        Customer Cus3=new Customer();
+        Cus3.cusName="Anthony";
+        Cus3.cusAge=40;
+        Cus3.cusGender="Male";
+        Cus3.cusId="ICus-007";
+
+
+        //Employee // Print
+        System.out.println("\nEMPLOYEE 1: ");
+        System.out.println("Id: "+Emp1.empId);
+        System.out.println("Name: "+Emp1.empName);
+        System.out.println("Age: "+Emp1.empAge);
+        System.out.println("Department: "+Emp1.empDept);
+
+        System.out.println("\nEMPLOYEE 2: ");
+        System.out.println("Id: "+Emp2.empId);
+        System.out.println("Name: "+Emp2.empName);
+        System.out.println("Age: "+Emp2.empAge);
+        System.out.println("Department: "+Emp2.empDept);
+
+        System.out.println("\nEMPLOYEE 3: ");
+        System.out.println("Id: "+Emp3.empId);
+        System.out.println("Name: "+Emp3.empName);
+        System.out.println("Age: "+Emp3.empAge);
+        System.out.println("Department: "+Emp3.empDept);
+
+        System.out.println("_________________________________________________________________");
+
+        //Customer
+        System.out.println("\nCUSTOMER 1: ");
+        System.out.println("Id: "+Cus1.cusId);
+        System.out.println("Name: "+Cus1.cusName);
+        System.out.println("Age: "+Cus1.cusAge);
+        System.out.println("Gender: "+Cus1.cusGender);
+
+        System.out.println("\nCUSTOMER 2: ");
+        System.out.println("Id: "+Cus2.cusId);
+        System.out.println("Name: "+Cus2.cusName);
+        System.out.println("Age: "+Cus2.cusAge);
+        System.out.println("Gender: "+Cus2.cusGender);
+
+        System.out.println("\nCUSTOMER 3: ");
+        System.out.println("Id: "+Cus3.cusId);
+        System.out.println("Name: "+Cus3.cusName);
+        System.out.println("Age: "+Cus3.cusAge);
+        System.out.println("Gender: "+Cus3.cusGender);
+    }
+}
