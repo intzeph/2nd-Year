@@ -1,0 +1,8 @@
+
+public class Employee {
+   String empId;
+   int empAge;
+   String empName;
+   String empDept;
+
+}
