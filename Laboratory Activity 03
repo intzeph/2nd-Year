@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+public class L3 {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+
+        int min,max;
+        //ask value from user
+        System.out.print("Please enter the minimum value: ");
+        min=scan.nextInt();
+        System.out.print("Please enter the maximum value: ");
+        max=scan.nextInt();
+        //print
+        System.out.println("\nMin: "+min);
+        System.out.println("Max: "+max);
+        //display the possible value frm the range
+        System.out.print("Range: ");
+        for(int x=min; x<=max; x++){
+            System.out.print(x +" ");
+        }
+        //math.random
+        System.out.println();
+        int RandomV=(int)(Math.random()*(max-min+1))+min;
+        System.out.print("Random Number: "+ RandomV);
+        System.out.println();
+        //convert to string
+        String converted= Integer.toString(RandomV);
+        System.out.println("The lucky winner is number "+converted+".");
+    }
+}
