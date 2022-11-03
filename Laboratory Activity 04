@@ -1,0 +1,51 @@
+
+import java.util.Scanner;
+
+public class L4 {
+    public static void main(String[] args) {
+        Scanner scan= new Scanner(System.in);
+        int result;
+
+        try{
+            System.out.println("OPERATORS: "+"1.'+'  2.'-'  3.'*'  4.'/'");
+            System.out.print("Please  choose an operator: ");
+            int choose=scan.nextInt();
+            System.out.print("Please enter a number: ");
+            int firstNum=scan.nextInt();
+            System.out.print("Please enter another number: ");
+            int secondNum=scan.nextInt();
+            if(choose==1){
+                result=firstNum+secondNum;
+                System.out.println("\nOperator: Addition");
+                System.out.println("First number: "+firstNum);
+                System.out.println("Second number: "+secondNum);
+                System.out.println("Result: "+result);
+            } else if (choose==2) {
+                result = firstNum-secondNum;
+                System.out.println("\nOperator: Subtraction");
+                System.out.println("First number: "+firstNum);
+                System.out.println("Second number: "+secondNum);
+                System.out.println("Result: "+result);
+            }else if(choose==3){
+                result=firstNum*secondNum;
+                System.out.println("\nOperator: Multiplication");
+                System.out.println("First number: "+firstNum);
+                System.out.println("Second number: "+secondNum);
+                System.out.println("Result: "+result);
+            }
+            else if(choose==4){
+                result=firstNum/secondNum;
+                System.out.println("\nOperator: Division");
+                System.out.println("First number: "+firstNum);
+                System.out.println("Second number: "+secondNum);
+                System.out.println("Result: "+result);
+            }
+            else{
+                System.out.println("Invalid Operator");
+            }
+        }
+        catch (Exception e){
+            System.out.println("The operator or the number you entered is invalid.");
+        }
+    }
+}
