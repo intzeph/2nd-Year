@@ -1,0 +1,61 @@
+import java.util.Scanner;
+class user{
+    int num1, num2, num3; //global variables
+    int operator, ans;
+    //no-args constructor
+    void userIn(){
+        Scanner scan=new Scanner(System.in);
+        try{
+            System.out.println("OPERATORS: "+"1.'+'  2.'-'  3.'*'  4.'/'");
+            System.out.print("Please  choose an operator: ");
+            operator=scan.nextInt();
+            System.out.print("Please enter a number: ");
+            num1=scan.nextInt();
+            System.out.print("Please enter a second number: ");
+            num2=scan.nextInt();
+            System.out.print("Please enter a third number: ");
+            num3=scan.nextInt();
+            if(operator==1){
+                ans=num1+num2+num3;
+                System.out.println("\nOperator: Addition");
+                System.out.println("First number: "+num1);
+                System.out.println("Second number: "+num2);
+                System.out.println("Third number: "+num3);
+                System.out.println("Result: "+ans);
+            } else if (operator==2) {
+                ans=num1-num2-num3;
+                System.out.println("\nOperator: Subtraction");
+                System.out.println("First number: "+num1);
+                System.out.println("Second number: "+num2);
+                System.out.println("Third number: "+num3);
+                System.out.println("Result: "+ans);
+            } else if (operator==3) {
+                ans=num1*num2*num3;
+                System.out.println("\nOperator: Multiplication");
+                System.out.println("First number: "+num1);
+                System.out.println("Second number: "+num2);
+                System.out.println("Third number: "+num3);
+                System.out.println("Result: "+ans);
+            }else if (operator==4){
+                ans=num1/num2/num3;
+                System.out.println("\nOperator: Division");
+                System.out.println("First number: "+num1);
+                System.out.println("Second number: "+num2);
+                System.out.println("Third number: "+num3);
+                System.out.println("Result: "+ans);
+            }else{
+                System.out.println("Invalid Operator");
+            }
+
+        }
+        catch (Exception e){
+            System.out.println("The operator or the number you entered is invalid.");
+        }
+    }
+}
+public class L5 {
+    public static void main(String[] args) {
+        user newUser= new user();
+        newUser.userIn();
+    }
+}
