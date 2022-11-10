@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Cmain{
+        String input, reverse="";
+
+    void main(){
+        Scanner scan=new Scanner(System.in);
+
+        try{
+            System.out.print("Enter a word: ");
+            input=scan.nextLine();
+
+            //reverse
+            for(int i=input.length()-1; i>=0; i--){
+                reverse+=input.charAt(i);
+            }
+            System.out.println("______________________________________________");
+
+        }
+        finally {
+            if(input.equals(reverse)){
+                System.out.println("Word: "+input);
+                System.out.println(input+" is a PALINDROME.");
+            } else {
+                System.out.println("Word: "+input);
+                System.out.println(input+" is NOT a PALINDROME.");
+            }
+        }
+    }
+}
+
+public class L6 {
+    public static void main(String[] args) {
+        Cmain newMain= new Cmain();
+
+        newMain.main();
+
+    }
+}
